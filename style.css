@@ -482,6 +482,7 @@ footer {
         font-size: 0.78rem;
         padding: 5px 14px;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -496,4 +497,40 @@ footer {
     .card-header h2 {
         font-size: 1.25rem;
     }
+
+} 
+
+/* ===== polaroid-container ===== */
+.polaroid-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(27, 27, 4, 0.986), var(--shadow-hover);
+    border: 1.5px solid rgb(0, 2, 2);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.polaroid-container:hover {
+    box-shadow: 0 8px 24px rgba(27, 27, 4, 0.986), var(--shadow-hover);
+    transform: translateY(-3px);
+}
+
+.polaroid-container img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    border-radius: var(--radius-sm);
+}
+
+.polaroid-caption p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 8px;
+    font-style: italic;
+    font-weight: bold;
 }
